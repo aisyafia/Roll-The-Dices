@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Dice from "./components/Dice";
+import { useState } from "react";
 
 function App() {
+  //   const [diceResult, setDiceResult] = useState(1);
+  //   setDiceResult(Dice);
+  // }
+
+  // const Dice = () => {
+  //   const diceToRoll = () => {
+  //     return Math.random() * 6;
+  //   };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Pair-programming: Roll the Dices</h1>
+      <Dice />
     </div>
   );
 }
